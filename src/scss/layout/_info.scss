@@ -49,6 +49,11 @@
     border: 2px solid $mainDetailColor;
     padding: 8px 20px;
     border-radius: 30px;
+    transition: background-color ease 2s, color ease 2s;
+    &:hover {
+      background-color: $mainDetailColor;
+      color: $titleColor;
+    }
     @include tablet {
       padding: 8px 30px;
     }
@@ -109,6 +114,12 @@
     background-color: $mainDetailColor;
     padding: 10px 30px;
     border-radius: 30px;
+    transition: background-color ease 2s, color ease 2s, border ease 2s;
+    &:hover {
+      background-color: $titleColor;
+      color: $mainDetailColor;
+      border: $mainDetailColor solid 2px;
+    }
     @include tablet {
       padding: 10px 40px;
     }
