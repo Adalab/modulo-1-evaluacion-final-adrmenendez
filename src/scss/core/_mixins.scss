@@ -1,0 +1,39 @@
+// medias
+@mixin tablet {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media all and (min-width: 1200px) {
+    @content;
+  }
+}
+
+//margins
+@mixin contentCentered($width) {
+  max-width: $width;
+  margin: auto;
+}
+
+//fonts
+@mixin mainFont($fontSize, $color) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: $fontSize;
+  color: $color;
+}
+
+@mixin secondFont($fontSize, $color) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: $fontSize;
+  color: $color;
+}
+
+@mixin titleFont($fontSize, $color) {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: $fontSize;
+  color: $color;
+}

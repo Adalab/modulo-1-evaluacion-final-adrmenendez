@@ -1,0 +1,51 @@
+.nav_menu {
+  height: 44px;
+  width: 44px;
+  background-color: $menuBackground;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.header {
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  &_title {
+    @include titleFont(42px, $titleColor);
+    text-transform: uppercase;
+    word-spacing: 100vw;
+    text-align: center;
+  }
+  &_subtitle {
+    @include mainFont(16px, $titleColor);
+    margin-top: 10px;
+  }
+  &_scroll {
+    margin-top: 45px;
+    margin-bottom: 53px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: $titleColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--img {
+      width: 20px;
+    }
+  }
+}

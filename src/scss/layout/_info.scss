@@ -1,0 +1,58 @@
+.container {
+  margin: 0 15px;
+  @include tablet {
+    margin: 0 39px;
+  }
+  @include desktop {
+    margin: 0 85px;
+  }
+}
+
+.description {
+  padding-top: 30px;
+  padding-bottom: 45px;
+  &_tips {
+    @include mainFont(14px, $secondDetailColor);
+  }
+  &_title {
+    @include titleFont(24px, $subtitleColor);
+  }
+  &_text {
+    @include mainFont(18px, $mainTextColor);
+    margin: 15px 0 30px 0;
+  }
+  &_button {
+    @include mainFont(20px, $mainDetailColor);
+    border: 2px solid $mainDetailColor;
+    padding: 8px 20px;
+    border-radius: 30px;
+  }
+}
+
+.reasons {
+  background-color: $reasonsBackground;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  text-align: center;
+  &_title {
+    @include titleFont(24px, $subtitleColor);
+    margin-bottom: 45px;
+  }
+  .article {
+    @include contentCentered(180px);
+    &--title {
+      @include titleFont(18px, $subtitleColor);
+    }
+    &--text {
+      @include mainFont(18px, $subtitleColor);
+      margin-bottom: 45px;
+    }
+  }
+  &_button {
+    @include mainFont(20px, $titleColor);
+    background-color: $mainDetailColor;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-bottom: 60px;
+  }
+}
