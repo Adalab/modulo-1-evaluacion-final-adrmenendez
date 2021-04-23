@@ -3,9 +3,6 @@
   @include tablet {
     margin: 0 39px;
   }
-  @include desktop {
-    margin: 0 85px;
-  }
 }
 
 .description {
@@ -14,16 +11,26 @@
   @include tablet {
     padding-bottom: 60px;
   }
+  @include desktop {
+    padding-top: 60px;
+    @include contentCentered(730px);
+  }
   &_tips {
     @include mainFont(14px, $secondDetailColor);
     line-height: 30px;
+    @include desktop {
+      font-size: 16px;
+    }
   }
   &_title {
     @include titleFont(24px, $subtitleColor);
     line-height: 30px;
     @include tablet {
-      @include titleFont(26px, $subtitleColor);
+      font-size: 26px;
       line-height: 45px;
+    }
+    @include desktop {
+      font-size: 32px;
     }
   }
   &_text {
@@ -31,6 +38,10 @@
     margin: 15px 0 30px 0;
     @include tablet {
       margin-top: 30px;
+    }
+    @include desktop {
+      font-size: 20px;
+      line-height: 30px;
     }
   }
   &_button {
@@ -40,6 +51,9 @@
     border-radius: 30px;
     @include tablet {
       padding: 8px 30px;
+    }
+    @include desktop {
+      padding: 8px 60px;
     }
   }
 }
@@ -52,6 +66,12 @@
   &_title {
     @include titleFont(24px, $subtitleColor);
     margin-bottom: 45px;
+    @include tablet {
+      font-size: 26px;
+    }
+    @include desktop {
+      font-size: 32px;
+    }
   }
   .main-articles {
     display: grid;
@@ -63,15 +83,23 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
     }
+    @include desktop {
+      @include contentCentered(1100px);
+    }
     &_article {
       &--title {
         @include titleFont(18px, $subtitleColor);
+        @include tablet {
+          font-size: 24px;
+        }
       }
       &--text {
         @include mainFont(18px, $subtitleColor);
         margin-bottom: 45px;
         @include tablet {
           margin-bottom: 60px;
+          margin-top: 14px;
+          font-size: 20px;
         }
       }
     }
@@ -81,5 +109,11 @@
     background-color: $mainDetailColor;
     padding: 10px 30px;
     border-radius: 30px;
+    @include tablet {
+      padding: 10px 40px;
+    }
+    @include tablet {
+      padding: 10px 60px;
+    }
   }
 }

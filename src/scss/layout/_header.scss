@@ -31,14 +31,17 @@
     word-spacing: 100vw;
     text-align: center;
     @include tablet {
-      @include titleFont(80px, $titleColor);
+      font-size: 80px;
+    }
+    @include desktop {
+      font-size: 100px;
     }
   }
   &_subtitle {
     @include mainFont(16px, $titleColor);
     margin-top: 10px;
     @include tablet {
-      @include mainFont(24px, $titleColor);
+      font-size: 24px;
     }
   }
   &_scroll {
