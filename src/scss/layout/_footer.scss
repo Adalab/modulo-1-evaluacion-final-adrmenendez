@@ -2,6 +2,27 @@
   background-color: $footerBackground;
   text-align: center;
   padding: 60px 0 45px 0;
+  &_scroll {
+    width: 100vw;
+    position: absolute;
+    transform: translate(0, -80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--circle {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background-color: $titleColor;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--img {
+      width: 20px;
+    }
+  }
   &_links {
     padding-bottom: 30px;
     &--item {
