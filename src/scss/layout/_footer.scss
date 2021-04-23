@@ -21,7 +21,9 @@
 }
 
 .footer {
-  background-color: $footerBackground;
+  &_background {
+    background-color: $footerBackground;
+  }
   text-align: center;
   padding: 60px 0 45px 0;
   @include tablet {
@@ -29,6 +31,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  @include desktop {
+    @include contentCentered(600px);
   }
   &_links {
     padding-bottom: 30px;

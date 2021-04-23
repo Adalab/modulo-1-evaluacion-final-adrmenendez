@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Evaluación final</title>
 </head>
@@ -15,10 +16,10 @@
         <a href="https://adalab.es/" title="web-adalab"><img src="./assets/images/ico-menu.svg" alt="menu" class="nav_menu--img" title="menu"></a>
     </nav>
 
-    <header class="header">
+    <header id="header" class="header">
         <h1 class="header_title">Anonymous proxy</h1>
         <h2 class="header_subtitle">In hac habitasse platea dictumst.</h2>
-        <a href="https://adalab.es/" title="scroll" class="header_scroll"><img src="./assets/images/ico-scroll-down.svg" alt="scroll" class="header_scroll--img" title="menu"></a>
+        <a href="#reasons" title="scroll" class="header_scroll"><img src="./assets/images/ico-scroll-down.svg" alt="scroll" class="header_scroll--img" title="menu"></a>
     </header>
     <main>
 
@@ -26,46 +27,55 @@
             <p class="description_tips">Insomnia tips</p>
             <h3 class="description_title">Looking through a window</h3>
             <p class="description_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa quo, alias iste facilis repellat veritatis?</p>
-            <a href="" class="description_button" title="Go">Go</a>
+            <a href="https://adalab.es/" class="description_button" title="Go">Go</a>
         </section>
 
-        <section class="reasons">
+        <section id="reasons" class="reasons">
             <h3 class="reasons_title container">3 reasons to purchase</h3>
-            <section class="article">
-                <article class="article container">
-                    <h4 class="article--title">Lorem, ipsum dolor.</h4>
-                    <p class="article--text">Lorem ipsum dolor sit amet consectetur.</p>
+            <section class="main-articles">
+                <article class="main-articles_article container">
+                    <h4 class="main-articles_article--title">Lorem, ipsum dolor.</h4>
+                    <p class="main-articles_article--text">Lorem ipsum dolor sit amet consectetur.</p>
                 </article>
-                <article class="article container">
-                    <h4 class="article--title">Lorem, ipsum dolor.</h4>
-                    <p class="article--text">Lorem ipsum dolor sit amet consectetur.</p>
+                <article class="main-articles_article container">
+                    <h4 class="main-articles_article--title">Lorem, ipsum dolor.</h4>
+                    <p class="main-articles_article--text">Lorem ipsum dolor sit amet consectetur.</p>
                 </article>
-                <article class="article container">
-                    <h4 class="article--title">Lorem, ipsum dolor.</h4>
-                    <p class="article--text">Lorem ipsum dolor sit amet consectetur.</p>
+                <article class="main-articles_article container">
+                    <h4 class="main-articles_article--title">Lorem, ipsum dolor.</h4>
+                    <p class="main-articles_article--text">Lorem ipsum dolor sit amet consectetur.</p>
                 </article>
             </section>
-            <a href="" class="reasons_button">More reasons</a>
+            <a href="https://adalab.es/" class="reasons_button">More reasons</a>
         </section>
         
     </main>
-    <footer class="footer">
-        <nav>
-            <ul class="link_page">
-                <li><a href="" class="link_page_item"></a>Article</li>
-                <li><a href="" class="link_page_item"></a>Books</li>
-                <li><a href="" class="link_page_item"></a>Events</li>
-                <li><a href="" class="link_page_item"></a>Reasons</li>
-                <li><a href="" class="link_page_item"></a>Tips</li>
-            </ul>
-        </nav>
-        <nav>
-            <ul class="link_media">
-                <li><a href="" class="link_page_item">Twitter</a></li>
-                <li><a href="" class="link_page_item">Instagram</a></li>
-                <li><a href="" class="link_page_item">Mastodon.social</a></li>
-            </ul>
-        </nav>
+    <div class="footer_scroll">
+        <a href="#header" title="scroll" class="footer_scroll--circle"><img src="./assets/images/ico-arrow.svg" alt="scroll" class="footer_scroll--img" title="menu"></a>
+    </div>
+    <footer class="footer_background">
+        <section class="footer">
+            <nav class="container">
+                <ul class="footer_links">
+                    <li><a href="https://adalab.es/" class="footer_links--item">Article</a></li>
+                    <li><a href="https://adalab.es/" class="footer_links--item">Books</a></li>
+                    <li><a href="https://adalab.es/" class="footer_links--item">Events</a></li>
+                    <li><a href="https://adalab.es/" class="footer_links--item">Reasons</a></li>
+                    <li><a href="https://adalab.es/" class="footer_links--item">Tips</a></li>
+                </ul>
+            </nav>
+            <nav class="container">
+                <ul class="footer_links">
+                    <li><a href="https://adalab.es/" class="footer_links--item">Twitter</a></li>
+                    <li><a href="https://adalab.es/" class="footer_links--item">Instagram</a></li>
+                    <li><a href="https://adalab.es/" class="footer_links--item">Mastodon.social</a><li>
+                </ul>
+            </nav>
+            <section class="footer_copy container">
+                <p class="footer_copy--item">&copy;2017</p>
+                <p class="footer_copy--item">we <i class="fa fa-heart" aria-hidden="true"></i> components</p>
+            </section>
+        </section>
     </footer>    
 </body>
 </html>
