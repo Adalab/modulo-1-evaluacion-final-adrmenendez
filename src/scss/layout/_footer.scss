@@ -53,6 +53,9 @@
       .fa {
         color: $mainDetailColor;
       }
+      @include tablet {
+        font-size: 16px;
+      }
     }
   }
 }
