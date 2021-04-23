@@ -1,27 +1,34 @@
+.footer_scroll {
+  width: 100vw;
+  position: absolute;
+  transform: translate(0, -20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--circle {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: $titleColor;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--img {
+    width: 20px;
+  }
+}
+
 .footer {
   background-color: $footerBackground;
   text-align: center;
   padding: 60px 0 45px 0;
-  &_scroll {
-    width: 100vw;
-    position: absolute;
-    transform: translate(0, -80px);
+  @include tablet {
+    text-align: left;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    &--circle {
-      height: 45px;
-      width: 45px;
-      border-radius: 50%;
-      background-color: $titleColor;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &--img {
-      width: 20px;
-    }
+    flex-direction: row;
+    justify-content: space-between;
   }
   &_links {
     padding-bottom: 30px;
@@ -32,6 +39,9 @@
     }
   }
   &_copy {
+    @include tablet {
+      order: -1;
+    }
     &--item {
       @include mainFont(14px, $titleColor);
       line-height: 30px;

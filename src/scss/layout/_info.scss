@@ -11,21 +11,36 @@
 .description {
   padding-top: 30px;
   padding-bottom: 45px;
+  @include tablet {
+    padding-bottom: 60px;
+  }
   &_tips {
     @include mainFont(14px, $secondDetailColor);
+    line-height: 30px;
   }
   &_title {
     @include titleFont(24px, $subtitleColor);
+    line-height: 30px;
+    @include tablet {
+      @include titleFont(26px, $subtitleColor);
+      line-height: 45px;
+    }
   }
   &_text {
     @include mainFont(18px, $mainTextColor);
     margin: 15px 0 30px 0;
+    @include tablet {
+      margin-top: 30px;
+    }
   }
   &_button {
     @include mainFont(20px, $mainDetailColor);
     border: 2px solid $mainDetailColor;
     padding: 8px 20px;
     border-radius: 30px;
+    @include tablet {
+      padding: 8px 30px;
+    }
   }
 }
 
@@ -38,14 +53,27 @@
     @include titleFont(24px, $subtitleColor);
     margin-bottom: 45px;
   }
-  .article {
-    @include contentCentered(180px);
-    &--title {
-      @include titleFont(18px, $subtitleColor);
+  .main-articles {
+    display: grid;
+    grid-template-columns: 180px;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    @include tablet {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
     }
-    &--text {
-      @include mainFont(18px, $subtitleColor);
-      margin-bottom: 45px;
+    &_article {
+      &--title {
+        @include titleFont(18px, $subtitleColor);
+      }
+      &--text {
+        @include mainFont(18px, $subtitleColor);
+        margin-bottom: 45px;
+        @include tablet {
+          margin-bottom: 60px;
+        }
+      }
     }
   }
   &_button {
@@ -53,6 +81,5 @@
     background-color: $mainDetailColor;
     padding: 10px 30px;
     border-radius: 30px;
-    margin-bottom: 60px;
   }
 }

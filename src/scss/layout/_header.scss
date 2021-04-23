@@ -30,10 +30,16 @@
     text-transform: uppercase;
     word-spacing: 100vw;
     text-align: center;
+    @include tablet {
+      @include titleFont(80px, $titleColor);
+    }
   }
   &_subtitle {
     @include mainFont(16px, $titleColor);
     margin-top: 10px;
+    @include tablet {
+      @include mainFont(24px, $titleColor);
+    }
   }
   &_scroll {
     margin-top: 45px;
