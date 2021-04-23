@@ -1,0 +1,22 @@
+.footer {
+  background-color: $footerBackground;
+  text-align: center;
+  padding: 60px 0 45px 0;
+  &_links {
+    padding-bottom: 30px;
+    &--item {
+      @include mainFont(16px, $titleColor);
+      text-transform: uppercase;
+      line-height: 30px;
+    }
+  }
+  &_copy {
+    &--item {
+      @include mainFont(14px, $titleColor);
+      line-height: 30px;
+      .fa {
+        color: $mainDetailColor;
+      }
+    }
+  }
+}
