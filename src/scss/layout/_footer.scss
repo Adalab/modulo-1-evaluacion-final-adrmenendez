@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: jump 0.7s ease 1s infinite alternate;
   &--circle {
     height: 45px;
     width: 45px;
@@ -17,6 +18,21 @@
   }
   &--img {
     width: 20px;
+  }
+  &:hover {
+    animation: none;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: scale(1.1, 0.9);
+  }
+  50% {
+    transform: scale(0.9, 1.1) translateY(-8px);
+  }
+  70% {
+    transform: scale(1);
   }
 }
 
