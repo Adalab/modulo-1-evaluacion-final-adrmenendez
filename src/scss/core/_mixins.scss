@@ -20,20 +20,20 @@
 @mixin mainFont($fontSize, $color) {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: $fontSize;
+  font-size: rem($fontSize);
   color: $color;
 }
 
 @mixin secondFont($fontSize, $color) {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: $fontSize;
+  font-size: rem($fontSize);
   color: $color;
 }
 
 @mixin titleFont($fontSize, $color) {
   font-family: "Roboto Slab", serif;
   font-weight: 700;
-  font-size: $fontSize;
+  font-size: rem($fontSize);
   color: $color;
 }
